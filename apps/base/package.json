@@ -1,0 +1,44 @@
+{
+  "name": "@designer/base",
+  "version": "1.0.0",
+  "description": "page designer base",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "page",
+    "designer",
+    "base"
+  ],
+  "author": "somnuszyy9527@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.21.0",
+  "dependencies": {
+    "react": "catalog:react18",
+    "react-dom": "catalog:react18",
+    "@designer/types": "workspace:*",
+    "@designer/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:eslint",
+    "@types/node": "catalog:typings",
+    "@types/react": "catalog:typings",
+    "@types/react-dom": "catalog:typings",
+    "@vitejs/plugin-react": "catalog:vite",
+    "eslint-config-prettier": "catalog:eslint",
+    "prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:eslint",
+    "vite": "catalog:vite",
+    "eslint": "catalog:eslint",
+    "eslint-plugin-react-hooks": "catalog:eslint",
+    "eslint-plugin-react-refresh": "catalog:eslint",
+    "typescript-eslint": "catalog:eslint",
+    "typescript": "catalog:",
+    "globals": "catalog:"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@designer/utils",
+  "version": "1.0.0",
+  "description": "designer utils",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "designer",
+    "utils"
+  ],
+  "author": "somnuszyy9527@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.21.0",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "rollup": "4.53.2",
+    "typescript": "catalog:"
+  }
+}

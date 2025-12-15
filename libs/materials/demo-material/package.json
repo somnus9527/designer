@@ -1,0 +1,52 @@
+{
+  "name": "@designer/demo-material",
+  "version": "1.0.0",
+  "description": "designer demo material",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node ./scripts/build.ts",
+    "build": "cross-env NODE_ENV=production node ./scripts/build.ts",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "page",
+    "designer",
+    "material",
+    "demo"
+  ],
+  "author": "somnuszyy9527@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.21.0",
+  "dependencies": {
+    "react": "catalog:react18",
+    "react-dom": "catalog:react18",
+    "antd": "catalog:antd",
+    "@designer/types": "workspace:*",
+    "@designer/utils": "workspace:*",
+    "@chamn/engine": "catalog:chamn",
+    "@chamn/model": "catalog:chamn"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:eslint",
+    "@types/node": "catalog:typings",
+    "@types/react": "catalog:typings",
+    "@types/react-dom": "catalog:typings",
+    "@vitejs/plugin-react": "catalog:vite",
+    "vite-plugin-dts": "catalog:vite",
+    "eslint-config-prettier": "catalog:eslint",
+    "prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:eslint",
+    "vite": "catalog:vite",
+    "eslint": "catalog:eslint",
+    "eslint-plugin-react-hooks": "catalog:eslint",
+    "eslint-plugin-react-refresh": "catalog:eslint",
+    "typescript-eslint": "catalog:eslint",
+    "typescript": "catalog:",
+    "globals": "catalog:",
+    "less": "catalog:",
+    "cross-env": "catalog:"
+  }
+}

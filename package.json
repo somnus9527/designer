@@ -1,0 +1,38 @@
+{
+  "name": "designer",
+  "version": "1.0.0",
+  "description": "Page Designer Monorepo",
+  "keywords": [
+    "Page",
+    "Designer"
+  ],
+  "author": "somnuszyy9527@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.25.0",
+  "scripts": {
+    "start:base": "pnpm --filter @designer/base start",
+    "start:core": "pnpm --filter @designer/core start",
+    "start:coreplay": "pnpm --filter @designer/core start:playground",
+    "start:types": "pnpm --filter @designer/types start",
+    "start:utils": "pnpm --filter @designer/utils start",
+    "start:material:demo": "pnpm --filter @designer/demo-material start",
+    "build:base": "pnpm --filter @designer/base build",
+    "build:core": "pnpm --filter @designer/core build",
+    "build:types": "pnpm --filter @designer/types build",
+    "build:utils": "pnpm --filter @designer/utils build",
+    "build:material:demo": "pnpm --filter @designer/demo-material build",
+    "start": "concurrently \"pnpm run start:types\" \"pnpm run start:utils\" \"pnpm run start:base\" \"pnpm run start:core\"",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:typings",
+    "concurrently": "^9.2.1",
+    "ts-node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "resolutions": {
+    "react": "catalog:react18",
+    "@types/react": "catalog:typings",
+    "vite": "catalog:vite"
+  }
+}
